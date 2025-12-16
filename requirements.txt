@@ -1,0 +1,35 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+tqdm>=4.65.0
+
+# Text processing
+rank-bm25>=0.2.2
+
+# Vector search (for open-set)
+faiss-cpu>=1.7.4
+# faiss-gpu>=1.7.4  # Use this instead if you have GPU
+
+# Data processing
+Pillow>=9.5.0
+pandas>=2.0.0
+
+# Configuration
+PyYAML>=6.0
+
+# Logging and visualization
+tensorboard>=2.13.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Testing
+pytest>=7.3.0
+pytest-cov>=4.1.0
+
+# Jupyter (optional, for notebooks)
+jupyter>=1.0.0
+ipython>=8.12.0
