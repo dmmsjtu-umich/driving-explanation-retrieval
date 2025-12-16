@@ -10,8 +10,8 @@ Given a driving video and action description (e.g., "the car slows down"), class
 
 | Model | Top-1 | Top-3 | Top-5 | Macro-F1 |
 |-------|-------|-------|-------|----------|
-| Text-only (BERT) | 21.5% | - | - | - |
-| Video+Text Concat | 23.8% | - | - | - |
+| Text-only (BERT) | 21.51% | 42.36% | 53.55% | 14.02% |
+| Video+Text Concat | 23.82% | 46.45% | 57.92% | 15.68% |
 | **VLTransformer (Ours)** | **33.92%** | **57.08%** | **67.29%** | **24.79%** |
 
 ## Architecture
@@ -53,17 +53,6 @@ python neural_model/train.py --eval_only --checkpoint checkpoints/best.pt
 - **BDD-X**: 26,521 video clips with action-explanation pairs
 - **Splits**: Train 21,143 / Val 2,519 / Test 2,859
 - **Clustering**: 50 semantic clusters via K-Means on Sentence-BERT embeddings
-
-## Citation
-
-```bibtex
-@inproceedings{kim2018bddx,
-  title={Textual explanations for self-driving vehicles},
-  author={Kim, Jinkyu and Rohrbach, Anna and Darrell, Trevor and Canny, John and Rohrbach, Marcus},
-  booktitle={ECCV},
-  year={2018}
-}
-```
 
 ## License
 
