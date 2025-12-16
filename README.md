@@ -16,6 +16,8 @@ Given a driving video and action description (e.g., "the car slows down"), class
 
 ## Architecture
 
+![Architecture](architecture.png)
+
 - **Video Encoder**: 3D ResNet-18 with 2×2 spatial grid tokens (8 tokens per clip)
 - **Text Encoder**: Frozen BERT-base for action narration
 - **Fusion**: 4-layer Transformer with multi-head self-attention
